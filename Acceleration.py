@@ -42,7 +42,7 @@ st.title("Achilles Tendon Stress Prediction")
 
 # 显示应用说明
 st.write("""
-This application is designed to predict and identify personalized risk factors related to increased Achilles tendon stress during the start running phase. 
+This application is designed to predict and identify personalized risk factors related to increased Achilles tendon stress during the steady-state phase. 
 After entering your running posture information on the right, the model will predict your Achilles tendon stress and provide a report. 
 If your tendon stress is high, you can actively adjust your running posture to reduce the stress and prevent running injuries.
 """)
@@ -77,3 +77,4 @@ predicted_stress = model.predict(user_input)
 
 # 显示预测结果
 st.write(f"Predicted Achilles Tendon Stress: {predicted_stress[0]:.2f}")
+
